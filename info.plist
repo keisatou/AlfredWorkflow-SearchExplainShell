@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>org.metaphox.explainshell</string>
+	<key>connections</key>
+	<dict>
+		<key>18496A24-834C-4076-B8B2-AB342A2F000A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B56855DC-63B2-4C59-AF04-A6A760E6C279</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Metaphox</string>
+	<key>description</key>
+	<string>On explainshell.com</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Explain A Shell Command</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import subprocess
+
+subprocess.call(
+	["open",	 "http://explainshell.com/explain/{0}".format(
+		"{query}".replace(" ", "?args=", 1).replace(" ", "+")
+	)]
+)</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B56855DC-63B2-4C59-AF04-A6A760E6C279</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>explain</string>
+				<key>subtext</key>
+				<string>on explainshell.com</string>
+				<key>text</key>
+				<string>Explain shell command…</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>18496A24-834C-4076-B8B2-AB342A2F000A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>18496A24-834C-4076-B8B2-AB342A2F000A</key>
+		<dict>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
+		<key>B56855DC-63B2-4C59-AF04-A6A760E6C279</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>metaphox.com</string>
+</dict>
+</plist>
