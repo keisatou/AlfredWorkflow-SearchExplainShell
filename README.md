@@ -13,3 +13,6 @@ https://github.com/keisatou/AlfredWorkflow-SearchExplainShell/blob/master/Explai
 # On Alfred
 http://www.alfredapp.com/  
 http://support.alfredapp.com/
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/keisatou/alfredworkflow-searchexplainshell/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
